@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d100b"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ภูสอยดาว"><title>เช็กลิสต์ภูสอยดาว</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#0d100b;--cd:#161b12;--ln:#2b3523;--tx:#ebf0e2;--mu:#8f9b82;--ol:#8a9d3b;--or:#ff8a1f;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;color:var(--tx);font:400 15px/1.45 Kanit,system-ui,sans-serif;padding-bottom:84px;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' fill='none' stroke='%238a9d3b' stroke-opacity='.1'%3E%3Cellipse cx='120' cy='140' rx='110' ry='70'/%3E%3Cellipse cx='120' cy='140' rx='78' ry='46'/%3E%3Cellipse cx='120' cy='140' rx='46' ry='24'/%3E%3Cellipse cx='320' cy='310' rx='90' ry='60'/%3E%3Cellipse cx='320' cy='310' rx='56' ry='34'/%3E%3C/svg%3E") fixed}
+.w{max-width:560px;margin:0 auto;padding:18px 14px}
+h1{font-size:34px;line-height:1.05;margin:4px 0 6px;font-weight:700;letter-spacing:-.5px}
+.tg{color:var(--or);font-weight:500;font-size:13px}.sub{color:var(--mu);font-size:13px}
+.cd0{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:99px;background:var(--or);color:#1a0e00;font-weight:700;font-size:14px}
+h2{font-size:18px;margin:26px 0 8px;font-weight:700;color:var(--ol);display:flex;justify-content:space-between;align-items:baseline}
+h2 span{font-size:12px;color:var(--mu);font-weight:400}
+.cd{background:var(--cd);border:1px solid var(--ln);border-left:4px solid var(--ln);border-radius:10px;padding:11px 12px;margin:0 0 8px}
+.cd.on{border-left-color:var(--ol)}.cd.off{opacity:.45}.cd.buy{border-left-color:#e5322d;background:#1d1210}.cd.rent{border-left-color:#3aa8d8}button.r{background:#e5322d;border-color:#e5322d;color:#fff;font-weight:700}button.n{background:#3aa8d8;border-color:#3aa8d8;color:#04121a;font-weight:700}.bd.by{background:#e5322d;color:#fff;font-size:13px;padding:2px 10px}.bd.rn{background:#3aa8d8;color:#04121a;font-size:13px;padding:2px 10px}.tw{overflow:auto;max-height:340px;border:1px solid var(--ln);border-radius:8px;margin-top:6px}table{border-collapse:collapse;width:100%;min-width:600px;font-size:12.5px}th,td{border:1px solid var(--ln);padding:6px 8px;text-align:left;white-space:nowrap}td:nth-child(3){white-space:normal;min-width:150px}th{position:sticky;top:0;background:#1d2417;color:var(--ol)}tbody tr:nth-child(even){background:#12160f}td.p{text-align:right}.tt td{background:#1d2417;font-weight:700;color:var(--or)}td.sb{color:#ff6b66;font-weight:700}td.sr{color:#5ec2ee;font-weight:700}
+.nm{font-weight:500}.nm small{display:block;color:var(--mu);font-weight:400;font-size:12.5px;margin-top:1px}
+.rw{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+button,select,input{font:inherit;color:var(--tx)}
+button{background:#0d100b;border:1px solid var(--ln);border-radius:8px;padding:8px 13px;min-height:40px;cursor:pointer}
+button.a{background:var(--ol);border-color:var(--ol);color:#10140a;font-weight:700}
+button.b{background:var(--or);border-color:var(--or);color:#1a0e00;font-weight:700}
+button.x{background:#2a2f25;color:var(--mu)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--or);outline-offset:2px}
+input,select{background:#0d100b;border:1px solid var(--ln);border-radius:8px;padding:8px 10px;min-height:40px}
+input[type=number]{width:96px}
+.pr{display:inline-flex;align-items:center;gap:6px;margin-top:9px;color:var(--or);font-weight:700}
+.nav{position:fixed;left:0;right:0;bottom:0;display:flex;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:#0d100bf2;border-top:1px solid var(--ln)}
+.nav button{flex:1;font-weight:500}.nav button.a{font-weight:700}
+.bar{height:8px;background:#232a1c;border-radius:9px;overflow:hidden;margin:8px 0}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ol),var(--or));transition:width .25s}
+.pk{display:flex;align-items:center;gap:10px}
+.ck{flex:none;width:40px;padding:0;font-size:20px}
+.bd{font-size:11px;padding:1px 7px;border-radius:9px;background:var(--or);color:#1a0e00;margin-left:6px;font-weight:700;vertical-align:middle}
+.sum{background:var(--cd);border:1px solid var(--or);border-radius:10px;padding:12px;margin:10px 0}
+.ln{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:7px 0;border-bottom:1px dashed var(--ln)}
+.tot{font-size:30px;font-weight:700;color:var(--or)}
+.dn{text-decoration:line-through;color:var(--mu)}
+details{margin-top:9px}summary{color:var(--ol);cursor:pointer;font-size:13px;padding:4px 0}button.al{display:flex;gap:8px;width:100%;text-align:left;margin-top:5px;font-size:13.5px}button.al small{color:var(--mu);margin-left:6px}button.al.a small{color:#10140a}.us{display:block;color:var(--or);font-size:12.5px}.rc{font-size:11px;font-weight:500}
+.t{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--or);color:#1a0e00;padding:8px 16px;border-radius:99px;font-weight:700;display:none}
+</style></head><body><div class="w" id="app"></div><div class="nav" id="nv"></div><div class="t" id="ts"></div>
+<script>
+const C=['ที่นอน','เป้และการแพ็ก','เสื้อผ้าเดิน','กันหนาว','รองเท้าและกันฝน','ไฟและแบต','น้ำและอาหาร','สุขอนามัย','ยาและปฐมพยาบาล','เอกสารและเงิน','จิปาถะและขนม'];
+// [หมวด, ชื่อ, สเปค, h=มีแล้ว, p/s=ลูกหาบ/แบกเอง, กก.]
+const R=[
+[0,'เต็นท์ 2 คน','เช็กเสา ซิป หมุดให้ครบ ลองกางที่บ้าน','h','p',2.5],
+[0,'ผ้าปูเต็นท์','กันความชื้นจากพื้น','h','p',.4],
+[0,'ฟลายชีท','เช็กรอยรั่ว ลองกางก่อนไป','h','p',.8],
+[0,'แผ่นรองนอนโฟม','สำคัญมาก ความเย็นจากพื้นหนาวกว่าที่คิด','h','p',.4],
+[0,'หมอนเป่าลม','','h','p',.2],
+[0,'ถุงนอน','ดูค่า Comfort ราว 0–5°C (ไม่ใช่ค่า Limit) เช่าได้ถ้าไม่ซื้อ','','p',1.3],
+[0,'ผ้าซับถุงนอน','เพิ่มความอุ่น และกันถุงนอนเปื้อน','','p',.2],
+[1,'เป้เดินป่า 25–35 ลิตร','ใส่ของใช้ระหว่างเดิน มีสายรัดเอว','','s',1.2],
+[1,'กระเป๋าใหญ่ฝากลูกหาบ','เป้หรือกระเป๋าผ้าทนๆ ติดแท็กชื่อ','','p',.8],
+[1,'ถุงกันน้ำ / ถุงดำหนา','ห่อของฝากลูกหาบกันเปียก','','p',.1],
+[1,'ถุงซิปล็อก','แยกของเล็ก ใส่ขยะและผ้าอนามัยใช้แล้ว','','s',.1],
+[1,'ผ้าคลุมกันฝนเป้','หรือใช้ปอนโชคลุมแทนได้','','s',.1],
+[2,'เสื้อแห้งเร็ว','โพลีเอสเตอร์หรือเมอริโน ไม่ใส่ฝ้าย','','s',.2],
+[2,'กางเกงเดินป่า / เลกกิ้งขายาว','ยืดหยุ่น กันกิ่งไม้และแดด','','s',.3],
+[2,'สปอร์ตบรา','แห้งเร็ว ไม่มีโครงเหล็ก','','s',.1],
+[2,'กางเกงในสำรอง','1–2 ตัว ผ้าแห้งเร็ว ใส่ถุงแยกกันเปียก','','p',.1],
+[2,'ถุงเท้าเดินป่า 2 คู่','ใยสังเคราะห์หรือขนแกะ กันพอง','','s',.2],
+[2,'หมวก / บัฟ','กันแดดตอนขึ้น','','s',.1],
+[3,'เบสเลเยอร์ (เสื้อ+กางเกง)','เก็บอุณหภูมิ ใส่นอนได้','','p',.4],
+[3,'เสื้อฟลีซ','ชั้นกลาง ใส่ตอนถึงลานสน','','s',.4],
+[3,'เสื้อกันลม / ดาวน์เบา','ชั้นนอก ลมบนลานสนแรง','','s',.4],
+[3,'หมวกไหมพรม + ถุงมือ','เช้ามืดหนาวสุด','','s',.2],
+[3,'ถุงเท้านอน','ใส่เฉพาะนอน ต้องแห้งเสมอ','','p',.1],
+[3,'ชุดนอนแห้ง','ห้ามใส่ชุดที่เปียกเหงื่อนอน','','p',.5],
+[4,'รองเท้าเดินป่า','ดอกยางกันลื่น ใส่ซ้อมก่อนไปจริง','','s',0],
+[4,'ไม้เท้าเดินป่า','ช่วยตอนลงเนิน เช่าได้','','s',.5],
+[4,'เสื้อกันฝน / ปอนโช','ทางลื่น อากาศเปลี่ยนไว','','s',.3],
+[4,'รองเท้าแตะ','ใส่ที่แคมป์','','p',.4],
+[5,'ไฟฉายคาดหัว','พกถ่านสำรอง','','s',.1],
+[5,'พาวเวอร์แบงก์','10,000 mAh พอสำหรับ 2 วัน อากาศหนาวแบตหมดไว','','s',.3],
+[5,'สายชาร์จ + ซองกันน้ำมือถือ','','','s',.1],
+[6,'ขวดน้ำ 1–1.5 ลิตร','ขาขึ้นเอาพอดีๆ เติมที่ตู้น้ำบนลานสน','','s',.2],
+[6,'เกลือแร่ซอง','','','s',.1],
+[6,'ข้าวห่อมื้อกลางวัน','สั่งที่ร้านตามสั่งตีนเขา','','s',.4],
+[6,'เหรียญหยอดตู้น้ำ','ตู้น้ำบนลานสนใช้เหรียญ','','s',0],
+[6,'แก้วเก็บความร้อน','ชา กาแฟ น้ำอุ่นตอนเช้า','','s',.3],
+[7,'ผ้าอนามัย / ถ้วยอนามัย','เผื่อมาเร็วหรือช้า ใช้แล้วแบกลงเอง','','s',.2],
+[7,'ทิชชู่เปียกไร้กลิ่น + ทิชชู่ม้วน','','','s',.3],
+[7,'เจลล้างมือ','','','s',.1],
+[7,'แปรงสีฟัน ยาสีฟันเล็ก','ขนาดพกพา ไว้ใช้เอง','','s',.1],
+[7,'ครีมกันแดด + ลิปมัน','ของใช้ส่วนตัว ครีมต่างๆ แพ็กเล็กหรือแบบซอง ลมแห้ง แดดแรง','','s',.1],
+[8,'ยาประจำตัว','พกติดตัว ไม่ฝากลูกหาบ','','s',.1],
+[8,'พารา + ยาแก้ปวดประจำเดือน','','','s',.1],
+[8,'ยาเมารถ / ท้องเสีย / แพ้','ถนนขึ้นเขาคดเคี้ยว','','s',.1],
+[8,'พลาสเตอร์กันพอง','ติดจุดเสี่ยงส้นเท้าก่อนเดิน','','s',.1],
+[8,'สเปรย์กันแมลง','','','s',.2],
+[9,'บัตรประชาชน','','','s',0],
+[9,'หลักฐานจอง / Google Form','แคปหน้าจอไว้ สัญญาณบนเขาอ่อน','','s',0],
+[9,'เงินสดใบเล็ก','','','s',0],
+[10,'แผ่นแปะร้อน','แปะเสื้อชั้นใน ช่วยตอนหนาว','','s',.1],
+[10,'เทปผ้า + เชือกเส้นเล็ก','ซ่อมฉุกเฉิน','','p',.2],
+[10,'อาหารสำรอง 1 มื้อ','ขนมปัง โจ๊กซอง โปรตีนบาร์ เผื่อร้านบนลานสนปิดหรือของหมด','','s',.5],
+[10,'ช็อกโกแลต ถั่ว กล้วยตาก','ขนมพลังงานระหว่างเดิน','','s',.4],
+[10,'เจลพลังงาน / ลูกอม','เอาไว้ช่วงเนินชัน','','s',.1],
+[10,'ชา กาแฟ โกโก้ซอง','ชงตอนมีน้ำร้อน','','p',.1],
+[10,'ขนมแบ่งเพื่อนร่วมแคมป์','','','p',.3]
+];
+const T=['ให้เจ้าของทริปยืนยันการจอง และกรอก Google Form กางเต็นท์','ถามว่าทริปรวมอาหารไหม และร้านบนลานสนเปิดถึงกี่โมง','ลองกางเต็นท์ และใส่รองเท้าเดินซ้อมก่อนไป','ดูพยากรณ์อากาศก่อนไป 2–3 วัน'];
+const AL={5:'ถุงนอนใหม่ Comfort 0–5°C|เช่าถุงนอน (ถามทัวร์หรืออุทยาน)|ยืมเพื่อนหรือคนรู้จัก|ผ้าห่มหนา + ผ้าซับ + ใส่เสื้อผ้าซ้อนหลายชั้นนอน',6:'ผ้าซับถุงนอนสำเร็จรูป|ผ้าปูที่นอนผืนบางพับครึ่ง|ผ้าขนหนูผืนใหญ่หรือผ้าห่มบาง',7:'เป้เดินป่า 30–40 ลิตร|ยืมเป้จากเพื่อน|เป้นักเรียนหรือเป้เดินทางใบใหญ่ที่มีสายรัดอก (ใส่เฉพาะของเบา)',8:'เป้ใบใหญ่หรือ duffel|กระเป๋าผ้าหรือถุงกระสอบหนา ไม่มีล้อ|ถุงปุ๋ยหรือถุงดำหนา 2 ชั้น รัดปาก ติดแท็กชื่อ',9:'Dry bag|ถุงขยะดำหนา ซ้อน 2 ชั้น รัดปากแน่น|ถุงพลาสติกหนาหรือถุงปุ๋ย แยกใส่ของเป็นชุด',10:'ถุงซิปล็อก|ถุงพลาสติกใสธรรมดา + หนังยางรัดปาก|ถุงขยะใบเล็ก รัดปากด้วยหนังยางหรือมัดปม',11:'ผ้าคลุมกันฝนเป้|ปอนโชคลุมทับเป้|ถุงพลาสติก/ถุงขยะใบใหญ่คลุมเป้ รัดด้วยหนังยางหรือเชือก|ถุงพลาสติกใบใหญ่รองด้านในเป้ แล้วใส่ของลงไป',14:'สปอร์ตบราแห้งเร็ว|สปอร์ตบราที่ใส่ออกกำลังกายอยู่แล้ว|บราไร้โครงผ้าบางที่ใส่สบาย|เสื้อกล้ามที่มีบราในตัว',15:'กางเกงในผ้าแห้งเร็ว|กางเกงในกีฬาที่ใส่ออกกำลังกายอยู่แล้ว|กางเกงในแบบใช้แล้วทิ้ง (ต้องแบกขยะลงเอง)',12:'เสื้อเดินป่าหรือเมอริโน|เสื้อกีฬา/เสื้อวิ่งโพลีเอสเตอร์|เสื้อยืดบางระบายอากาศดี (เลี่ยงคอตตอนหนา)',13:'กางเกงเดินป่าแห้งเร็ว|เลกกิ้งหรือกางเกงโยคะขายาว|กางเกงวอร์มผ้าบาง (เลี่ยงยีนส์)',16:'ถุงเท้าเดินป่าหรือขนแกะ|ถุงเท้าวิ่งแบบหนา|ถุงเท้ากีฬาธรรมดา ใส่ซ้อน 2 ชั้น',17:'หมวกปีกรอบ|หมวกแก๊ป|ผ้าผืนใหญ่คลุมหัว',18:'เบสเลเยอร์หรือฮีทเทค|เสื้อกีฬาแขนยาว + เลกกิ้ง|เสื้อยืดแขนยาว + กางเกงวอร์ม ซ้อนกัน',19:'เสื้อฟลีซ|ฮู้ดดี้หรือสเวตเตอร์หนา|เสื้อยืด 2–3 ชั้นซ้อนกัน',20:'ดาวน์เบาหรือแจ็กเก็ตกันลม|แจ็กเก็ตร่มหรือเสื้อกีฬาบางๆ|เสื้อกันฝนพลาสติกสวมทับเป็นชั้นกันลม',21:'หมวกไหมพรม + ถุงมือสำหรับเดินป่า|ถุงมือผ้าและหมวกที่มีอยู่|ผ้าบัฟหรือผ้าพันคอ + ถุงเท้าสวมมือ',22:'ถุงเท้าขนแกะหนา|ถุงเท้าหนาคู่ที่ไม่ได้ใส่เดิน|ถุงเท้ากีฬาสะอาด ซ้อน 2 คู่',24:'รองเท้าเดินป่าหรือเทรล ดอกยางลึก|รองเท้าวิ่งที่ดอกยางลึกและกริปดี|รองเท้าผ้าใบสภาพดี ดอกยางไม่เรียบ (ไม่ควรใช้รองเท้าแตะหรือพื้นเรียบ ทางลื่น)',25:'ไม้เท้าเดินป่า 1 คู่|เช่า (ถามทัวร์หรืออุทยาน)|ไม่ใช้ก็ได้ถ้าเข่าไม่มีปัญหา แต่ช่วยตอนลงเนิน',26:'ปอนโชเดินป่า|ชุดกันฝนเนื้อดี|เสื้อกันฝนพลาสติกแบบบางราคาถูก|ถุงขยะดำเจาะรู 3 ช่อง (ฉุกเฉิน)',28:'ไฟคาดหัว (headlamp)|ไฟฉาย LED เล็ก + หนังยางรัดหัว|ไฟฉายมือถือ (กินแบต ต้องมีพาวเวอร์แบงก์)',30:'ซองกันน้ำมือถือ|ถุงซิปล็อกใส่มือถือ|ถุงพลาสติกใส + หนังยางรัด',31:'กระเป๋าน้ำหรือขวดสปอร์ต 1 ลิตร|ขวดน้ำแร่ขนาด 1.5 ลิตรที่มีอยู่ ใช้ซ้ำ',36:'ผ้าอนามัยแบบที่ใช้ประจำ + ถุงซิปล็อกห่อของใช้แล้ว|ถ้วยอนามัย (ถ้าเคยใช้มาก่อน)',37:'ทิชชู่เปียกไร้กลิ่น|ผ้าขนหนูผืนเล็กชุบน้ำ + ทิชชู่แห้ง',40:'ครีมกันแดด SPF50|หมวกและเสื้อแขนยาวคลุมผิว',44:'พลาสเตอร์ไฮโดรคอลลอยด์กันพอง|พลาสเตอร์ปิดแผลปกติ + เทปผ้าแปะส้นเท้าก่อนเดิน',45:'สเปรย์กันแมลง|โลชั่นหรือครีมทากันยุง|เสื้อแขนยาว กางเกงขายาวคลุมผิว',49:'แผ่นแปะร้อน|ขวดทนร้อนใส่น้ำอุ่นกอดในถุงนอน (ถ้ามีน้ำร้อน)|ใส่เสื้อซ้อนชั้นเพิ่ม'};
+const ao=it=>it.id[0]==='i'?AL[+it.id.slice(1)]:'';
+const K='psd1',K2='psd2',$=s=>document.querySelector(s),OP=new Set(['tbl']);let RS=0;
+const tbl=()=>{const A=all(),L=A.filter(i=>S.t[i.id]===1).sort((a,b)=>a.c-b.c),N=s=>L.filter(i=>S.st[i.id]===s).length,u=A.filter(i=>S.t[i.id]===undefined).length,nm={have:'มีแล้ว',buy:'ต้องซื้อ',rent:'เช่า/ยืม'};let sum=0;
+const rows=L.map((i,n)=>{const s=S.st[i.id],p=(s==='buy'||s==='rent')?+S.pr[i.id]||0:0;sum+=p;const o=ao(i)&&S.al[i.id]!==undefined?ao(i).split('|')[S.al[i.id]]:'';
+return `<tr><td>${n+1}</td><td>${C[i.c]}</td><td>${esc(i.n)}</td><td class="${s==='buy'?'sb':s==='rent'?'sr':''}">${nm[s]||'ยังไม่ระบุ'}</td><td class="p">${p?fmt(p):''}</td><td>${car(i)==='p'?'ลูกหาบ':'แบกเอง'}</td><td>${esc(o)}</td></tr>`}).join('');
+return `<details data-o="tbl" ${OP.has('tbl')?'open':''}><summary style="font-size:15px;font-weight:500">ตารางสรุป (เอา ${L.length} ชิ้น)</summary><div class="sub">มีแล้ว ${N('have')} / ต้องซื้อ ${N('buy')} / เช่า-ยืม ${N('rent')} / ยังไม่เลือก ${u}</div><div class="tw"><table><thead><tr><th>#</th><th>หมวด</th><th>รายการ</th><th>สถานะ</th><th>ราคา ฿</th><th>ใครแบก</th><th>ตัวเลือกที่ใช้</th></tr></thead><tbody>${rows||'<tr><td colspan="7">ยังไม่ได้เลือกของ แตะ เอา ที่รายการด้านล่าง</td></tr>'}<tr class="tt"><td colspan="4">รวมของที่ต้องซื้อ/เช่า</td><td class="p">${fmt(sum)}</td><td colspan="2"></td></tr></tbody></table></div></details>`};
+const pid=()=>'p'+Date.now().toString(36);
+const alt=it=>{const a=ao(it);if(!a)return '';const L=a.split('|'),v=S.al[it.id];
+return `<details data-o="${it.id}" ${OP.has(it.id)?'open':''}><summary>ตัวเลือกทดแทน (${L.length})${v!==undefined?' เลือกข้อ '+(v+1):''}</summary>${L.map((x,i)=>`<button class="al ${v===i?'a':''}" data-a="al" data-id="${it.id}" data-v="${i}"><span>${i+1}.</span><span>${x}<small>${i===0?'ดีที่สุด':i===L.length-1?'ทดแทน':''}</small></span></button>`).join('')}</details>`};
+const plans=()=>{const P=ROOT.plans,c=ROOT.cur;
+return `<details class="sum" data-o="plans" ${OP.has('plans')?'open':''}><summary style="font-size:15px;font-weight:500">แผนของฉัน: ${esc(P[c].n)} (${Object.keys(P).length} แผน)</summary><div class="sub">แตะชื่อเพื่อสลับแผน</div>${Object.keys(P).map(k=>`<button class="al ${k===c?'a':''}" data-a="sw" data-v="${k}">${esc(P[k].n)}</button>`).join('')}<div class="rw"><input id="pn" placeholder="ตั้งชื่อแผน" style="flex:1;min-width:140px"></div><div class="rw"><button data-a="pnew" class="a">สร้างแผนใหม่</button><button data-a="pdup">ทำสำเนาแผนนี้</button><button data-a="pren">เปลี่ยนชื่อ</button><button data-a="pdel" class="${RS===2?'b':''}">${RS===2?'แตะอีกครั้งเพื่อลบ':'ลบแผนนี้'}</button></div><div class="rw"><button data-a="pexp">คัดลอกรหัสแผนนี้</button></div><div class="rw"><textarea id="pi" rows="2" placeholder="วางรหัสแผนจากเพื่อนที่นี่" style="flex:1;min-width:140px;background:#0d100b;color:var(--tx);border:1px solid var(--ln);border-radius:8px;padding:8px"></textarea><button data-a="pimp" class="a">นำเข้า</button></div></details>`};
+const D={t:{},st:{},pr:{},ca:{},kg:{},pk:{},td:{},cu:[],f:'all',tab:1,fx:{en:40,tn:30,rt:30,wy:2,cr:0,fd:0}};
+const fix=d=>{d=Object.assign({},D,d);d.fx=Object.assign({},D.fx,d.fx);d.al=d.al||{};return d};
+const mk=()=>{const d=fix({t:{},st:{},pr:{},ca:{},kg:{},pk:{},td:{},cu:[],al:{}});R.forEach((r,i)=>{if(r[3]==='h'){d.t['i'+i]=1;d.st['i'+i]='have'}});return d};
+let ROOT,S;
+try{ROOT=JSON.parse(localStorage.getItem(K2)||'null');if(!ROOT){const o=JSON.parse(localStorage.getItem(K)||'null');if(o)ROOT={cur:'p1',plans:{p1:{n:'แผน 1',d:o}}}}}catch(e){}
+if(!ROOT||!ROOT.plans)ROOT={cur:'p1',plans:{p1:{n:'แผน 1',d:mk()}}};
+if(!ROOT.plans[ROOT.cur])ROOT.cur=Object.keys(ROOT.plans)[0];
+Object.values(ROOT.plans).forEach(p=>p.d=fix(p.d));S=ROOT.plans[ROOT.cur].d;
+const save=()=>{try{localStorage.setItem(K2,JSON.stringify(ROOT))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const all=()=>R.map((r,i)=>({id:'i'+i,c:r[0],n:r[1],d:r[2],h:r[3],p:r[4],k:r[5]})).concat(S.cu.map((u,i)=>({id:'c'+i,c:u.c,n:u.n,d:'เพิ่มเอง',h:'',p:'s',k:.3})));
+all().forEach(it=>{if(it.h==='h'&&S.t[it.id]===undefined){S.t[it.id]=1;S.st[it.id]='have'}});
+const car=it=>S.ca[it.id]||it.p,kg=it=>+(S.kg[it.id]??it.k)||0,tk=it=>all().length&&S.t[it.id]===1;
+const fmt=n=>Math.round(n).toLocaleString('th-TH');
+const num=(v,id,f)=>`<input type="number" inputmode="decimal" data-f="${f}" data-id="${id}" value="${v??''}">`;
+function s1(){const L=all(),tk_=L.filter(i=>S.t[i.id]===1),by=tk_.filter(i=>S.st[i.id]==='buy').length;
+let h=`<div class="sub">ขั้นที่ 1: เลือกว่าจะเอาอะไร</div><div class="sub">เอา ${tk_.length} ชิ้น จากทั้งหมด ${L.length}  ต้องซื้อ ${by} ชิ้น</div>`+tbl();
+C.forEach((c,ci)=>{const g=L.filter(i=>i.c===ci);h+=`<h2>${c}<span>${g.length} ชิ้น</span></h2>`;
+g.forEach(it=>{const t=S.t[it.id],st=S.st[it.id];
+h+=`<div class="cd ${t===1?(st==='buy'?'buy':st==='rent'?'rent':'on'):''} ${t===0?'off':''}"><div class="nm">${esc(it.n)}${it.d?`<small>${esc(it.d)}</small>`:''}</div>
+<div class="rw"><button data-a="take" data-id="${it.id}" class="${t===1?'a':''}">เอา</button><button data-a="skip" data-id="${it.id}" class="${t===0?'x':''}">ไม่เอา</button></div>`;
+if(t===1)h+=`<div class="rw">${[['have','มีแล้ว'],['buy','ต้องซื้อ'],['rent','เช่า/ยืม']].map(([k,l])=>`<button data-a="st" data-id="${it.id}" data-v="${k}" class="${st===k?(k==='buy'?'r':k==='rent'?'n':'a'):''}">${l}</button>`).join('')}</div>`;
+if(t===1&&(st==='buy'||st==='rent'))h+=`<label class="pr">฿ ${num(S.pr[it.id],it.id,'pr')}<span style="font-weight:400;color:var(--mu);font-size:12px">${st==='buy'?'ราคา':'ค่าเช่า'}</span></label>`;
+h+=alt(it)+'</div>'});});
+h+=`<h2>เพิ่มของเอง</h2><div class="cd"><div class="rw"><input id="cn" placeholder="ชื่อของ" style="flex:1;min-width:140px"><select id="cc">${C.map((c,i)=>`<option value="${i}">${c}</option>`).join('')}</select><button data-a="add" class="a">เพิ่ม</button></div></div>`;
+return h}
+function pw(){const L=all().filter(i=>S.t[i.id]===1&&car(i)==='p');return L.reduce((a,i)=>a+kg(i),0)}
+function s2(){const L=all().filter(i=>S.t[i.id]===1),dn=L.filter(i=>S.pk[i.id]).length,p=L.length?Math.round(dn*100/L.length):0,
+x=S.fx,kgs=pw(),td=T.filter((_,i)=>S.td[i]).length;
+let h=`<div class="sub">ขั้นที่ 2: แพ็กของตามเช็กลิสต์</div><div class="sub">*แนะนำ คือวิธีที่เราแนะนำสำหรับของชิ้นนั้น เปลี่ยนได้ทุกชิ้น</div><div class="sum"><b>แพ็กแล้ว ${dn}/${L.length}</b> (${p}%)<div class="bar"><i style="width:${p}%"></i></div><div class="sub">ฝากลูกหาบ ${kgs.toFixed(1)} กก. ประมาณ ฿${fmt(kgs*x.rt*x.wy)}</div></div>
+<h2>ภารกิจก่อนไป<span>${td}/${T.length}</span></h2>`;
+T.forEach((t,i)=>h+=`<div class="cd"><div class="pk"><button class="ck ${S.td[i]?'a':''}" data-a="td" data-v="${i}">${S.td[i]?'✓':''}</button><div class="nm ${S.td[i]?'dn':''}">${t}</div></div></div>`);
+h+=`<div class="rw" style="margin-top:18px">${[['all','ทั้งหมด'],['p','ลูกหาบ'],['s','แบกเอง']].map(([k,l])=>`<button data-a="flt" data-v="${k}" class="${S.f===k?'a':''}">${l}</button>`).join('')}</div>`;
+if(!L.length)h+=`<div class="cd" style="margin-top:12px">ยังไม่มีของในลิสต์ ไปที่ขั้นที่ 1 แล้วแตะ "เอา" ที่ของที่ต้องการ</div>`;
+C.forEach((c,ci)=>{const g=L.filter(i=>i.c===ci&&(S.f==='all'||car(i)===S.f));if(!g.length)return;h+=`<h2>${c}<span>${g.length} ชิ้น</span></h2>`;
+g.forEach(it=>{const cp=car(it)==='p',st=S.st[it.id];
+h+=`<div class="cd ${S.pk[it.id]?'on':''} ${st==='buy'?'buy':st==='rent'?'rent':''}"><div class="pk"><button class="ck ${S.pk[it.id]?'a':''}" data-a="pk" data-id="${it.id}">${S.pk[it.id]?'✓':''}</button><div class="nm ${S.pk[it.id]?'dn':''}">${esc(it.n)}${st==='buy'?'<span class="bd by">ต้องซื้อ</span>':st==='rent'?'<span class="bd rn">เช่า/ยืม</span>':''}${ao(it)&&S.al[it.id]!==undefined?`<span class="us">ใช้: ${ao(it).split('|')[S.al[it.id]]}</span>`:''}${it.d?`<small>${esc(it.d)}</small>`:''}</div></div>
+<div class="rw">${[['s','แบกเอง'],['p','ลูกหาบ']].map(([k,l])=>`<button data-a="car" data-id="${it.id}" data-v="${k}" class="${(cp?'p':'s')===k?(k==='p'?'b':'a'):''}">${l}${it.p===k?' <span class="rc">*แนะนำ</span>':''}</button>`).join('')}${cp?`<label class="pr" style="margin:0">${num(kg(it),it.id,'kg')}<span style="font-weight:400;color:var(--mu);font-size:12px">กก.</span></label>`:''}</div></div>`})});
+return h}
+function s3(){const L=all().filter(i=>S.t[i.id]===1),x=S.fx,bu=L.filter(i=>S.st[i.id]==='buy'||S.st[i.id]==='rent'),
+sp=bu.reduce((a,i)=>a+(+S.pr[i.id]||0),0),po=pw()*x.rt*x.wy,tot=sp+po+(+x.en)+(+x.tn)+(+x.cr)+(+x.fd);
+const fl=(l,k,u)=>`<div class="ln"><span>${l}</span><span>${num(x[k],'',k)} ${u||''}</span></div>`;
+let h=`<div class="sub">ขั้นที่ 3: สรุปงบ</div><div class="sum"><div class="sub">รวมทั้งหมดโดยประมาณ</div><div class="tot">฿${fmt(tot)}</div></div>
+${tbl()}<h2>ของที่ต้องซื้อ/เช่า<span>฿${fmt(sp)}</span></h2>`;
+h+=bu.length?bu.map(i=>`<div class="ln"><span>${esc(i.n)}<span class="bd ${S.st[i.id]==='buy'?'by':'rn'}">${S.st[i.id]==='buy'?'ต้องซื้อ':'เช่า'}</span></span><b>${S.pr[i.id]?'฿'+fmt(S.pr[i.id]):'ยังไม่ใส่ราคา'}</b></div>`).join(''):'<div class="sub">ยังไม่มีของที่ต้องซื้อ</div>';
+h+=`<h2>ค่าใช้จ่ายอื่น</h2>${fl('ค่าเข้าอุทยาน','en','฿')}${fl('ค่ากางเต็นท์ (คืนเดียว)','tn','฿')}
+<div class="ln"><span>ลูกหาบ ${pw().toFixed(1)} กก.</span><b>฿${fmt(po)}</b></div>${fl('อัตราลูกหาบ ต่อ กก. ต่อเที่ยว','rt','฿')}${fl('จำนวนเที่ยว (ขึ้น+ลง = 2)','wy','')}
+${fl('ค่ารถแชร์','cr','฿')}${fl('ค่าอาหาร','fd','฿')}<div class="ln"><span>มัดจำขยะ (ได้คืนเมื่อเอาขยะลงมา)</span><b>฿200</b></div>
+<div class="rw" style="margin-top:18px"><button data-a="copy" class="a">คัดลอกสรุปไปส่ง LINE</button></div>`;
+return h}
+function head(){const d=Math.max(0,Math.ceil((new Date(2026,10,28)-new Date())/864e5));
+return `<div class="tg">ภูสอยดาว ลานสน 1,633 ม.</div><h1>เช็กลิสต์<br>เดินป่า 2 วัน 1 คืน</h1><div class="sub">28–29 พ.ย. 69 อากาศอาจเหลือราว 2°C ตอนเช้า</div><span class="cd0">อีก ${d} วัน</span> <button data-a="reset" style="margin-left:8px" class="${RS===1?'b':''}">${RS===1?'แตะอีกครั้งเพื่อรีเซ็ตแผนนี้':'รีเซ็ต'}</button>${plans()}`}
+function draw(){const y=scrollY;$('#app').innerHTML=head()+[s1,s2,s3][S.tab-1]();
+$('#nv').innerHTML=[[1,'1 คัดของ'],[2,'2 แพ็กของ'],[3,'3 งบ']].map(([k,l])=>`<button data-a="tab" data-v="${k}" class="${S.tab===k?'a':''}">${l}</button>`).join('');scrollTo(0,y)}
+function toast(m){const t=$('#ts');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',1800)}
+function summary(){const L=all().filter(i=>S.t[i.id]===1);let o='เช็กลิสต์ภูสอยดาว 28–29 พ.ย. 69\n';
+[['p','ฝากลูกหาบ'],['s','แบกเอง']].forEach(([k,l])=>{o+='\n'+l+'\n';L.filter(i=>car(i)===k).forEach(i=>o+=(S.pk[i.id]?'✓ ':'☐ ')+i.n+(S.st[i.id]==='buy'?' (ซื้อ)':S.st[i.id]==='rent'?' (เช่า)':'')+'\n')});return o}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,id=b.dataset.id,v=b.dataset.v;
+if(a!=='reset'&&a!=='pdel')RS=0;
+if(a==='tab'){S.tab=+v;scrollTo(0,0)}
+else if(a==='take'){S.t[id]=1}else if(a==='skip'){S.t[id]=0}else if(a==='st'){S.st[id]=v}
+else if(a==='car'){S.ca[id]=v}else if(a==='al'){if(S.al[id]===+v)delete S.al[id];else S.al[id]=+v}
+else if(a==='pk'){S.pk[id]=!S.pk[id]}else if(a==='td'){S.td[v]=!S.td[v]}else if(a==='flt'){S.f=v}
+else if(a==='add'){const n=$('#cn').value.trim();if(!n){toast('ใส่ชื่อของก่อน');return}S.cu.push({n,c:+$('#cc').value});S.t['c'+(S.cu.length-1)]=1}
+else if(a==='copy'){const s=summary();(navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(()=>toast('คัดลอกแล้ว'),()=>toast('คัดลอกไม่สำเร็จ'));return}
+else if(a==='pexp'){const c=btoa(unescape(encodeURIComponent(JSON.stringify({n:ROOT.plans[ROOT.cur].n,d:S}))));(navigator.clipboard?navigator.clipboard.writeText(c):Promise.reject()).then(()=>toast('คัดลอกรหัสแล้ว'),()=>{$('#pi').value=c;toast('คัดลอกเองจากช่องข้อความ')});return}
+else if(a==='pimp'){try{const o=JSON.parse(decodeURIComponent(escape(atob($('#pi').value.trim())))),k=pid();ROOT.plans[k]={n:(o.n||'แผน')+' (นำเข้า)',d:fix(o.d)};ROOT.cur=k;S=ROOT.plans[k].d;toast('นำเข้าแล้ว')}catch(x){toast('รหัสไม่ถูกต้อง');return}}
+else if(a==='sw'){ROOT.cur=v;S=ROOT.plans[v].d;scrollTo(0,0)}
+else if(a==='pnew'||a==='pdup'){const pn=($('#pn').value||'').trim(),k=pid();ROOT.plans[k]=a==='pnew'?{n:pn||'แผน '+(Object.keys(ROOT.plans).length+1),d:mk()}:{n:pn||ROOT.plans[ROOT.cur].n+' (สำเนา)',d:JSON.parse(JSON.stringify(S))};ROOT.cur=k;S=ROOT.plans[k].d;toast('สร้างแผนแล้ว')}
+else if(a==='pren'){const pn=($('#pn').value||'').trim();if(!pn){toast('พิมพ์ชื่อใหม่ก่อน');return}ROOT.plans[ROOT.cur].n=pn}
+else if(a==='pdel'){if(Object.keys(ROOT.plans).length<2){toast('ต้องมีอย่างน้อย 1 แผน');return}if(RS!==2){RS=2;draw();return}RS=0;delete ROOT.plans[ROOT.cur];ROOT.cur=Object.keys(ROOT.plans)[0];S=ROOT.plans[ROOT.cur].d}
+else if(a==='reset'){if(RS!==1){RS=1;draw();return}RS=0;ROOT.plans[ROOT.cur].d=mk();S=ROOT.plans[ROOT.cur].d;toast('รีเซ็ตแล้ว')}
+save();draw()});
+document.addEventListener('toggle',e=>{const o=e.target.dataset&&e.target.dataset.o;if(o)e.target.open?OP.add(o):OP.delete(o)},true);
+document.addEventListener('change',e=>{const f=e.target.dataset.f;if(!f)return;const id=e.target.dataset.id,v=e.target.value;
+if(f==='pr')S.pr[id]=v;else if(f==='kg')S.kg[id]=v;else S.fx[f]=v;save();draw()});
+draw();
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script></body></html>
